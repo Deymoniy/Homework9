@@ -4,7 +4,7 @@ Console.Write("Enter your number: ");
 int x = Convert.ToInt32(Console.ReadLine());
 int count = 2;
 Console.Write("So here are your even numbers: ");
-while(count < x)
+while(count <= x)
 {
     Console.Write(" ");
     Console.Write(count);
