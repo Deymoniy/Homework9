@@ -1,4 +1,4 @@
-﻿console.clear();
+﻿Console.Clear();
 Console.WriteLine("Greetings user! Let's compare three numbers.");
 Console.Write("Enter your first number: ");
 int x = Convert.ToInt32(Console.ReadLine());
