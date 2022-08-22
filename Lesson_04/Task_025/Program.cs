@@ -4,5 +4,11 @@ Console.Write("Enter your X: ");
 int x = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter your Y: ");
 int y = Convert.ToInt32(Console.ReadLine());
-double result = Math.Pow(x, y);
+
+void Result(int a, int b)
+{
+double result = Math.Pow(a, b);
 Console.WriteLine($"Your number is {result}");
+}
+
+Result (x, y);
