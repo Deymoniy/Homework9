@@ -7,8 +7,11 @@ int y = Convert.ToInt32(Console.ReadLine());
 
 void Result(int a, int b)
 {
-double result = Math.Pow(a, b);
-Console.WriteLine($"Your number is {result}");
+    if ((a > 0) && (b > 0))
+        {
+        double result = Math.Pow(a, b);
+        Console.WriteLine($"Your number is {result}");
+        }
+    else Console.WriteLine("Wrong numbers. Both numbers should be above 0.");
 }
-
 Result (x, y);
