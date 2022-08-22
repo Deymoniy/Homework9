@@ -6,7 +6,7 @@ Console.WriteLine($"So your number is {input}. Got it. Gimme a second to think."
 Console.Write("Your doubled numbers are: ");
 for(int i = 1; i <= input; i++)
     {
-    int temp = i * i;
+    int temp = i * i * i;
     Console.Write($"{temp} ");
     }
 Console.WriteLine(" ");
