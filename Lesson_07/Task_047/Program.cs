@@ -5,7 +5,7 @@
 // 8 7,8 -7,1 9
 
 Console.Clear();
-Console.WriteLine("Greetings user! Let's see arithmetic means for randomly generated array.");
+Console.WriteLine("Greetings user! Let's see randomly generated array.");
 double[,] matrix = new double[5, 5];
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
