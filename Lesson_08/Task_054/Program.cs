@@ -8,7 +8,7 @@
 // 9 5 3 2
 // 8 4 4 2
 Console.Clear();
-Console.WriteLine("Greetings user! Let's see randomly generated array.");
+Console.WriteLine("Greetings user! Let's put you array in order from largest number to smallest.");
 int[,] matrix = new int[4, 4];
 
 for (int i = 0; i < matrix.GetLength(0); i++)
