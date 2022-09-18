@@ -33,23 +33,19 @@ void CheckingNumbers(int min, int max)
     {
         if (min < 0)
         {
-            min = min + (min * -1) + 1;
+            min += (min * -1) + 1;
         }
         Console.Write("Your summ is: ");
         for (int x = min; x <= max; x++)
         {
-            if (min < 0)
-            {
-                min = min + (min * -1) + 1;
-            }
             if (x == 0)
             {
                 x++;
-                summ = summ + x;
+                summ += x;
             }
             else
             {
-                summ = summ + x;
+                summ += x;
             }
         }
     }
