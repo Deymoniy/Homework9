@@ -3,7 +3,7 @@
 // M = 1; N = 5. -> ""1, 2, 3, 4, 5""
 // M = 4; N = 8. -> ""4, 6, 7, 8""
 Console.Clear();
-Console.WriteLine("Greetings user! Let's see how many of your inputs are bigger higher then 0.");
+Console.WriteLine("Greetings user! Let's see all the natural numbers between your entered numbers.");
 Console.Write("Enter your 1st number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter your 2nd number: ");
@@ -21,9 +21,34 @@ else
     maximal = num2;
     minimal = num1;
 }
-Console.WriteLine($"{minimal} {maximal}");
-Console.Write("Your natural number are: ");
-for(int x = minimal; x <= maximal; x++)
+Console.WriteLine($"I'll show you natural numbers from {minimal} to {maximal}.");
+void CheckingNumbers(int min, int max)
 {
-    Console.Write($" {x}");
-} 
+    if ((min < 0) && (max < 0))
+    {
+        Console.WriteLine("Sorry, negative numbers can't be natural.");
+    }
+    else
+    {
+        if (min < 0)
+        {
+            min = min + (min * -1) + 1;
+        }
+        Console.Write("Your natural number are: ");
+        for (int x = min; x <= max; x++)
+        {
+            if (min < 0)
+            {
+                min = min + (min * -1) + 1;
+            }
+            if (x == 0)
+            {
+                x++;
+                Console.Write($" {x}");
+            }
+            else Console.Write($" {x}");
+        }
+    }
+}
+
+CheckingNumbers(minimal, maximal);
